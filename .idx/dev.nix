@@ -6,7 +6,7 @@
   # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.jdk23
-    pkgs.gradle,
+    pkgs.gradle
     pkgs.kotlin
   ];
   # Sets environment variables in the workspace
