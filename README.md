@@ -6,7 +6,7 @@
     <br>
     Not affiliated or officially endorsed by JetBrains or Google.
   </p>
-  <a href="https://studio.firebase.google.com/import?url=">
+  <a href="https://studio.firebase.google.com/import?url=https://github.com/itjustcrashed/kotlin-firebase-studio-template">
     <picture>
       <source
         media="(prefers-color-scheme: dark)"
