@@ -26,18 +26,6 @@
       "required": true
     },
     {
-      "id": "project-tests",
-      "name": "Testing Framework",
-      "type": "enum",
-      "default": "junit-jupiter",
-      "options": {
-        "junit-jupiter": "JUnit Jupiter",
-        "testng": "TestNG",
-        "spock": "Spock"
-      },
-      "required": true
-    },
-    {
       "id": "project-name",
       "name": "Project Name",
       "type": "text"
