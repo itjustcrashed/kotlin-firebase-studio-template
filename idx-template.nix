@@ -9,8 +9,6 @@
   ];
 
   bootstrap = ''
-    # We use Nix string interpolation to pass the user's chosen programming
-    # language to our script.
     gradle init \
     --type ${project-type} \
     --dsl ${project-dsl} \
@@ -21,7 +19,9 @@
     # Copy the folder containing the `idx-template` files to the final
     # project folder for the new workspace. ${./.} inserts the directory
     # of the checked-out Git folder containing this template.
-    cp -rf ${./.} "$out"
+    mkdir -p "$out"
+    rm -rf "$out/*"
+    cp  ${./*} "$out/"
 
     # Set some permissions
     chmod -R +w "$out"
