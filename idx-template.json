@@ -1,6 +1,6 @@
 {
-  "name": "Kotlin/JVM",
-  "description": "A template for a Kotlin project using the JVM.",
+  "name": "Kotlin",
+  "description": "A template for a Kotlin project.",
   "icon": "https://upload.wikimedia.org/wikipedia/commons/a/af/Kotlin_Full_Color_Logo_Mark_RGB.png",
   "params": [
     {
