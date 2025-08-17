@@ -3,7 +3,7 @@
 # parameter IDs, including default values (language=ts by default in this example).
 { pkgs, project-type ? "library", project-dsl ? "kotlin", project-tests ? "junit-juniper", project-name ? "myproject", project-package ? "com.example.myproject", ... }: {
   packages = [
-    pkgs.jdk23
+    pkgs.jdk21
     pkgs.gradle
     pkgs.kotlin
   ];
