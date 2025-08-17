@@ -7,7 +7,7 @@
       "id": "project-type",
       "name": "Project Type",
       "type": "enum",
-      "default": "library",
+      "default": "kotlin-library",
       "options": {
         "kotlin-library": "Library",
         "kotlin-application": "Application"
