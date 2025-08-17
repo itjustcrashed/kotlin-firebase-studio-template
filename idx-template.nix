@@ -1,7 +1,7 @@
 # idx-template.nix
 # Accept additional arguments to this template corresponding to template
 # parameter IDs, including default values (language=ts by default in this example).
-{ pkgs, project-type ? "library", project-dsl ? "kotlin", project-tests ? "junit-juniper", "project-name" ? "myproject", project-package ? "com.example.myproject" ... }: {
+{ pkgs, project-type ? "library", project-dsl ? "kotlin", project-tests ? "junit-juniper", project-name ? "myproject", project-package ? "com.example.myproject" ... }: {
   packages = [
     pkgs.jdk23
     pkgs.gradle
