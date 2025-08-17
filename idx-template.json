@@ -1,0 +1,51 @@
+{
+  "name": "Kotlin/JVM",
+  "description": "A template for a Kotlin project using the JVM.",
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/a/af/Kotlin_Full_Color_Logo_Mark_RGB.png",
+  "params": [
+    {
+      "id": "project-type",
+      "name": "Project Type",
+      "type": "enum",
+      "default": "library",
+      "options": {
+        "kotlin-library": "Library",
+        "kotlin-application": "Application"
+      },
+      "required": true
+    },
+    {
+      "id": "project-dsl",
+      "name": "Build Script Language",
+      "type": "enum",
+      "default": "kotlin",
+      "options": {
+        "kotlin": "Kotlin (build.gradle.kts)",
+        "groovy": "Groovy (build.gradle)"
+      },
+      "required": true
+    },
+    {
+      "id": "project-tests",
+      "name": "Testing Framework",
+      "type": "enum",
+      "default": "junit-jupiter",
+      "options": {
+        "junit-jupiter": "JUnit Jupiter",
+        "testng": "TestNG",
+        "spock": "Spock"
+      },
+      "required": true
+    },
+    {
+      "id": "project-name",
+      "name": "Project Name",
+      "type": "text"
+    },
+    {
+      "id": "project-package",
+      "name": "Package Name",
+      "type": "text"
+    }
+  ]
+}
