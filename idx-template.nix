@@ -17,7 +17,6 @@
     --test-framework ${project-tests} \
     --package ${project-package} \
     --project-name ${project-name} \
-    --java-version 23 \
     --use-defaults
 
     # Copy the folder containing the `idx-template` files to the final
