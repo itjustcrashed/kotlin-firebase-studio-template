@@ -9,17 +9,13 @@
   ];
 
   bootstrap = ''
-    gradle init \
-    --type ${project-type} \
-    --dsl ${project-dsl} \
-    --test-framework kotlintest \
-    --package ${project-package} \
-    --project-name ${project-name} \
-
     # Copy the folder containing the `idx-template` files to the final
     # project folder for the new workspace. ${./.} inserts the directory
     # of the checked-out Git folder containing this template.
-    cp ${./.} "$out/"
+    cp -rf ${./.} "$out/"
+
+    # Move into the output directory.
+    cd "$out"
 
     # Create the gradle project.
     gradle init \
