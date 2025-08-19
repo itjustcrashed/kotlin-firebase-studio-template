@@ -17,6 +17,9 @@
     # Move into the output directory.
     cd "$out"
 
+    # Set some permissions
+    chmod -R +w "$out"
+
     # Create the gradle project.
     gradle init \
     --type ${project-type} \
@@ -24,9 +27,6 @@
     --test-framework kotlintest \
     --package ${project-package} \
     --project-name ${project-name} \
-
-    # Set some permissions
-    chmod -R +w "$out"
 
     # Remove the template files themselves and any connection to the template's
     # Git repository
